@@ -46,33 +46,34 @@ html[data-theme="dark"] {
 ---------------------------
 */
 
+
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px #1d0b33;
-  border-radius: 2px;
-  background: #f1f1f1;
+  border-radius: 0px;
+  background: var(--bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 2px;
+  border-radius: 0px;
   max-height: 10px;
   -webkit-box-shadow: inset 0 0 6px #1d0b33;
-  background: #bb86fc;
+  background: var(--bg);
   transition: 0.3s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ca9eff;
+  background: var(--bg);
   
 }
 
 /* Custom Scrollbar for Mozilla Firefox*/
 html{
   overflow-y: hidden;
-  scrollbar-color: #141516 #141516;
+  scrollbar-color: var(--bg) var(--bg);
   scrollbar-width: auto;
 }
 
